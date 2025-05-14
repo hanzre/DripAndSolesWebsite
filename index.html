@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>title</title>
+    <style>
+        body {
+            font-family: "Josefin Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background: url('https://i.imgur.com/ueQc5Tz.jpeg') no-repeat center center/cover;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            padding: 1em;
+            width: 250px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        .product h3, .product h4, .product p {
+            color: black;
+            margin: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        button {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        #home, #about, #contact {
+            display: none;
+        }
+       .swiper {
+  width: 100%;
+  height: 200px;
+         
+}
+
+.swiper-slide img {1
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+  .swiper-button-next,
+.swiper-button-prev {
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
+}
+  .product img:hover {
+    transition: transform 2s ease;
+    transform: rotateX(360deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+  
+
+ht;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #111827;
+}
+
+
+ </style>
+</head>
+<body>
+
+<header>
+    <h1>DRIP AND SOLES</h1>
+    <nav>
+        <ul>
+            <li><a onclick="toggleSection('home')">Home</a></li>
+            <li><a onclick="toggleSection('about')">About</a></li>
+            <li><a onclick="toggleSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h1> Drip & Soles Co. (For perfect combination of outfit)</h1>
+    <p>Step up your style with shoes that blend comfort, innovation, and fashion. From casual to classy, our collection keeps you looking sharp—just like your BSIT game.</p>
+
+</section>
+    
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to *Drip and Soles* — your one-stop shop for tech-savvy style! From bold clothing and fresh kicks to standout accessories, we help BSIT students stay sharp in class and on point in fashion. Learn smart. Dress smarter.</p>
+     <p>Bryan Paul Ryan </p>
+            <P>John Mark Bismar</P>
+            <P>Mark Anthony Saavedra</P>
+            <P>Hanz Rey Parohinog</P>       
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Gmail: dripandsolebsit@gmail.com</p>
+    <p>#: 0991624567</p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="products">
+        <div class="product">
+           <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/6Asc0bR.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/gtDdln9.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+            <h3>Logan Puff</h3>
+            <h4>Blanco Blue</h4>
+            <p>₱ 6,000.00 </p> 
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+           <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src=https://i.imgur.com/p9ERdgH.jpegalt="shoe 2"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/4w1FzbT.jpeg" alt="shoe 2 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Mlb hat blue</h3>
+            <h4>New Eras CAP for men</h4>
+            <p>₱ 1,500</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            
+           <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/QmORRYO.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/p5lv5zN.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Nike Cortez Leather</h3>
+            <h4>shoe</h4>
+            <p>₱ 4,695</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+           
+           <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/rni3dO9.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/K6VDUFZ.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Adidas Originals CN TT </h3>
+            <h4>Comfortable soft jacket</h4>
+            <p>₱ 3,495</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+   <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/Two0eXS.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src=" https://i.imgur.com/q7OJEy6.jpeg " alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Onitsuka Tiger</h3>
+            <h4>Mexico 66</h4>
+            <p>₱ 5,400</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+   <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/GP5cGje.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/fVLrsN5.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Jnco Jeans Harajuku</h3>
+            <h4>Men's Pants</h4>
+            <p>₱ 2,600</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+  <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/2L85fwB.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/gIZ1DzK.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Nike Dunk Low Retro</h3>
+            <H4>Men's Shoe</H4>
+            <p>₱ 5,895</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+  <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/aKk3WxY.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/j88Gg2i.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Arc'teryx Bird Head Toque </h3>
+            <h4>ARC'TERYX</h4>
+            <p>₱ 1,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+ <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/Sqzp62v.png" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/Onpfu3O.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Nike Impact 4</h3>
+            <p>₱ 3,359</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+ <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/CUSRLKd.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/smGpIFJ.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Nike Air Force 1 Low</h3>
+            <p>₱ 5,895</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+<div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/sxv20x5.png" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/b8mgDwo.png" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Nike Journy Run</h3>
+            <p>₱ 2,997</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+ <div class="swiper product-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://i.imgur.com/tDGQW4K.jpeg" alt="shoe 1"></div>
+    <div class="swiper-slide"><img src="https://i.imgur.com/8ldKytY.jpeg" alt="shoe 1 second view"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+            <h3>Derschutze Baggy Jeans</h3>
+            <p>₱  3,000</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 | All Rights Reserved</p>
+</footer>
+<script>
+    function toggleSection(sectionId) {
+        var sections = ['home', 'about', 'contact'];
+
+        sections.forEach(function(id) {
+            var section = document.getElementById(id);
+            section.style.display = (id === sectionId && section.style.display === 'none') ? 'block' : 'none';
+        });
+    }
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.product-swiper').forEach(swiperContainer => {
+            new Swiper(swiperContainer, {
+                loop: true,
+                navigation: {
+                    nextEl: swiperContainer.querySelector('.swiper-button-next'),
+                    prevEl: swiperContainer.querySelector('.swiper-button-prev'),
+                },
+                pagination: {
+                    el: swiperContainer.querySelector('.swiper-pagination'),
+                    clickable: true,
+
+                },
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
